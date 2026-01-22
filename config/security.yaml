@@ -1,0 +1,6 @@
+allowed_schemas:
+  - MAIN   # sqlite에 스키마 개념이 약하므로 의미상 표기(Oracle 전환시 실제 스키마로 교체)
+allowed_statements: ["SELECT"]
+max_rows: 50000
+default_timeout_ms: 15000
+forbidden_keywords: ["DELETE", "UPDATE", "INSERT", "MERGE", "DROP", "ALTER", "TRUNCATE", "GRANT", "REVOKE"]

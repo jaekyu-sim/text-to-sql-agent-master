@@ -1,0 +1,11 @@
+name: MAC-SQL Server
+version: 0.0.1
+schema: v1
+mcpServers:
+  - name: mac-sql
+    type: stdio
+    command: .venv/Scripts/python.exe
+    args:
+      - "server.py"
+    env:
+      PYTHONUNBUFFERED: "1"

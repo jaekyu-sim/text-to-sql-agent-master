@@ -1,0 +1,185 @@
+[
+  {
+    "table_name": "Album",
+    "column_names": ["AlbumId", "Title", "ArtistId"],
+    "column_types": ["INTEGER", "NVARCHAR(160)", "INTEGER"],
+    "description": {
+      "AlbumId": "고유 앨범 ID",
+      "Title": "앨범 이름",
+      "ArtistId": "아티스트 식별자 (Artist 테이블 참조)"
+    },
+    "sample_rows": [
+      {"AlbumId": 1, "Title": "For Those About To Rock We Salute You", "ArtistId": 1},
+      {"AlbumId": 2, "Title": "Balls to the Wall", "ArtistId": 2}
+    ]
+  },
+  {
+    "table_name": "Artist",
+    "column_names": ["ArtistId", "Name"],
+    "column_types": ["INTEGER", "NVARCHAR(120)"],
+    "description": {
+      "ArtistId": "아티스트 고유 ID",
+      "Name": "아티스트 이름"
+    },
+    "sample_rows": [
+      {"ArtistId": 1, "Name": "AC/DC"},
+      {"ArtistId": 2, "Name": "Accept"}
+    ]
+  },
+  {
+    "table_name": "Customer",
+    "column_names": ["CustomerId", "FirstName", "LastName", "Company", "Address", "City", "State", "Country", "PostalCode", "Phone", "Fax", "Email", "SupportRepId"],
+    "column_types": ["INTEGER", "NVARCHAR(40)", "NVARCHAR(20)", "NVARCHAR(80)", "NVARCHAR(70)", "NVARCHAR(40)", "NVARCHAR(40)", "NVARCHAR(40)", "NVARCHAR(10)", "NVARCHAR(24)", "NVARCHAR(24)", "NVARCHAR(60)", "INTEGER"],
+    "description": {
+      "CustomerId": "고객 ID",
+      "FirstName": "이름",
+      "LastName": "성",
+      "Company": "회사명 (선택)",
+      "Address": "주소",
+      "City": "도시",
+      "State": "주 또는 지역",
+      "Country": "국가",
+      "PostalCode": "우편번호",
+      "Phone": "전화번호",
+      "Fax": "팩스번호",
+      "Email": "이메일 주소",
+      "SupportRepId": "담당 직원 ID (Employee 테이블 참조)"
+    },
+    "sample_rows": [
+      {"CustomerId": 1, "FirstName": "Luís", "LastName": "Gonçalves", "Country": "Brazil"},
+      {"CustomerId": 2, "FirstName": "Leonie", "LastName": "Köhler", "Country": "Germany"}
+    ]
+  },
+  {
+    "table_name": "Employee",
+    "column_names": ["EmployeeId", "LastName", "FirstName", "Title", "ReportsTo", "BirthDate", "HireDate", "Address", "City", "State", "Country", "PostalCode", "Phone", "Fax", "Email"],
+    "column_types": ["INTEGER", "NVARCHAR(20)", "NVARCHAR(20)", "NVARCHAR(30)", "INTEGER", "DATETIME", "DATETIME", "NVARCHAR(70)", "NVARCHAR(40)", "NVARCHAR(40)", "NVARCHAR(40)", "NVARCHAR(10)", "NVARCHAR(24)", "NVARCHAR(24)", "NVARCHAR(60)"],
+    "description": {
+      "EmployeeId": "직원 ID",
+      "LastName": "성",
+      "FirstName": "이름",
+      "Title": "직책",
+      "ReportsTo": "상급자 ID (자기참조)",
+      "BirthDate": "생년월일",
+      "HireDate": "입사일",
+      "Address": "주소",
+      "City": "도시",
+      "State": "주/지역",
+      "Country": "국가",
+      "PostalCode": "우편번호",
+      "Phone": "전화번호",
+      "Fax": "팩스번호",
+      "Email": "이메일 주소"
+    },
+    "sample_rows": [
+      {"EmployeeId": 1, "FirstName": "Andrew", "LastName": "Adams", "Title": "General Manager"},
+      {"EmployeeId": 2, "FirstName": "Nancy", "LastName": "Edwards", "Title": "Sales Manager"}
+    ]
+  },
+  {
+    "table_name": "Genre",
+    "column_names": ["GenreId", "Name"],
+    "column_types": ["INTEGER", "NVARCHAR(120)"],
+    "description": {
+      "GenreId": "장르 ID",
+      "Name": "장르 이름"
+    },
+    "sample_rows": [
+      {"GenreId": 1, "Name": "Rock"},
+      {"GenreId": 2, "Name": "Jazz"}
+    ]
+  },
+  {
+    "table_name": "Invoice",
+    "column_names": ["InvoiceId", "CustomerId", "InvoiceDate", "BillingAddress", "BillingCity", "BillingState", "BillingCountry", "BillingPostalCode", "Total"],
+    "column_types": ["INTEGER", "INTEGER", "DATETIME", "NVARCHAR(70)", "NVARCHAR(40)", "NVARCHAR(40)", "NVARCHAR(40)", "NVARCHAR(10)", "NUMERIC(10,2)"],
+    "description": {
+      "InvoiceId": "송장 ID",
+      "CustomerId": "이 송장을 생성한 고객 ID (Customer 테이블 참조)",
+      "InvoiceDate": "송장 발행일",
+      "BillingAddress": "청구지 주소",
+      "BillingCity": "청구지 도시",
+      "BillingCountry": "청구지 국가",
+      "Total": "이 송장의 총 결제 금액(InvoiceLine.UnitPrice x Quantity의 합계)"
+    },
+    "sample_rows": [
+      {"InvoiceId": 1, "CustomerId": 2, "InvoiceDate": "2009-01-01", "Total": 1.98},
+      {"InvoiceId": 2, "CustomerId": 4, "InvoiceDate": "2009-01-02", "Total": 3.96}
+    ]
+  },
+  {
+    "table_name": "InvoiceLine",
+    "column_names": ["InvoiceLineId", "InvoiceId", "TrackId", "UnitPrice", "Quantity"],
+    "column_types": ["INTEGER", "INTEGER", "INTEGER", "NUMERIC(10,2)", "INTEGER"],
+    "description": {
+      "InvoiceLineId": "송장 항목 ID",
+      "InvoiceId": "송장 ID (Invoice 테이블 참조)",
+      "TrackId": "트랙 ID (Track 테이블 참조)",
+      "UnitPrice": "단가",
+      "Quantity": "수량"
+    },
+    "sample_rows": [
+      {"InvoiceLineId": 1, "InvoiceId": 1, "TrackId": 2, "Quantity": 1},
+      {"InvoiceLineId": 2, "InvoiceId": 1, "TrackId": 4, "Quantity": 1}
+    ]
+  },
+  {
+    "table_name": "MediaType",
+    "column_names": ["MediaTypeId", "Name"],
+    "column_types": ["INTEGER", "NVARCHAR(120)"],
+    "description": {
+      "MediaTypeId": "미디어 형식 ID",
+      "Name": "형식 이름 (예: MPEG audio, AAC 등)"
+    },
+    "sample_rows": [
+      {"MediaTypeId": 1, "Name": "MPEG audio file"},
+      {"MediaTypeId": 2, "Name": "Protected AAC audio file"}
+    ]
+  },
+  {
+    "table_name": "Playlist",
+    "column_names": ["PlaylistId", "Name"],
+    "column_types": ["INTEGER", "NVARCHAR(120)"],
+    "description": {
+      "PlaylistId": "재생목록 ID",
+      "Name": "재생목록 이름"
+    },
+    "sample_rows": [
+      {"PlaylistId": 1, "Name": "Music"},
+      {"PlaylistId": 2, "Name": "Movies"}
+    ]
+  },
+  {
+    "table_name": "PlaylistTrack",
+    "column_names": ["PlaylistId", "TrackId"],
+    "column_types": ["INTEGER", "INTEGER"],
+    "description": {
+      "PlaylistId": "재생목록 ID (Playlist 참조)",
+      "TrackId": "트랙 ID (Track 참조)"
+    },
+    "sample_rows": [
+      {"PlaylistId": 1, "TrackId": 1},
+      {"PlaylistId": 1, "TrackId": 2}
+    ]
+  },
+  {
+    "table_name": "Track",
+    "column_names": ["TrackId", "Name", "AlbumId", "MediaTypeId", "GenreId", "Composer", "Milliseconds", "Bytes", "UnitPrice"],
+    "column_types": ["INTEGER", "NVARCHAR(200)", "INTEGER", "INTEGER", "INTEGER", "NVARCHAR(220)", "INTEGER", "INTEGER", "NUMERIC(10,2)"],
+    "description": {
+      "TrackId": "트랙 ID",
+      "Name": "트랙 이름",
+      "AlbumId": "앨범 ID (Album 참조)",
+      "MediaTypeId": "미디어 형식 ID (MediaType 참조)",
+      "GenreId": "장르 ID (Genre 참조)",
+      "Composer": "작곡가",
+      "Milliseconds": "트랙 길이(ms)",
+      "Bytes": "파일 크기",
+      "UnitPrice": "단가"
+    },
+    "sample_rows": [
+      {"TrackId": 1, "Name": "For Those About To Rock (We Salute You)", "AlbumId": 1, "GenreId": 1, "UnitPrice": 0.99},
+      {"TrackId": 2, "Name": "Balls to the Wall", "AlbumId": 2, "GenreId": 1, "UnitPrice": 0.99}
+    ]
+  }
+]

@@ -1,0 +1,1168 @@
+[
+    {
+        "table_name": "ADVENTUREWORKS.COUNTRYREGIONCURRENCY",
+        "table_fullname": "ADVENTUREWORKS.ADVENTUREWORKS.COUNTRYREGIONCURRENCY",
+        "column_names": [
+            "modifieddate",
+            "countryregioncode",
+            "currencycode"
+        ],
+        "column_types": [
+            "TEXT",
+            "TEXT",
+            "TEXT"
+        ],
+        "description": [
+            null,
+            null,
+            null
+        ],
+        "sample_rows": [
+            {
+                "countryregioncode": "AE",
+                "currencycode": "AED",
+                "modifieddate": "2014-02-08 10:17:21.51"
+            },
+            {
+                "countryregioncode": "AR",
+                "currencycode": "ARS",
+                "modifieddate": "2014-02-08 10:17:21.51"
+            },
+            {
+                "countryregioncode": "AT",
+                "currencycode": "ATS",
+                "modifieddate": "2014-02-08 10:17:21.51"
+            },
+            {
+                "countryregioncode": "BD",
+                "currencycode": "BDT",
+                "modifieddate": "2014-02-08 10:17:21.51"
+            },
+            {
+                "countryregioncode": "BE",
+                "currencycode": "BEF",
+                "modifieddate": "2014-02-08 10:17:21.51"
+            }
+        ]
+    },
+    {
+        "table_name": "ADVENTUREWORKS.CURRENCYRATE",
+        "table_fullname": "ADVENTUREWORKS.ADVENTUREWORKS.CURRENCYRATE",
+        "column_names": [
+            "currencyrateid",
+            "tocurrencycode",
+            "endofdayrate",
+            "modifieddate",
+            "currencyratedate",
+            "fromcurrencycode",
+            "averagerate"
+        ],
+        "column_types": [
+            "NUMBER",
+            "TEXT",
+            "FLOAT",
+            "TEXT",
+            "TEXT",
+            "TEXT",
+            "FLOAT"
+        ],
+        "description": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "sample_rows": [
+            {
+                "currencyrateid": 2,
+                "currencyratedate": "2011-05-31 00:00:00",
+                "fromcurrencycode": "USD",
+                "tocurrencycode": "AUD",
+                "averagerate": 1.5491,
+                "endofdayrate": 1.55,
+                "modifieddate": "2011-05-31 00:00:00"
+            },
+            {
+                "currencyrateid": 4,
+                "currencyratedate": "2011-05-31 00:00:00",
+                "fromcurrencycode": "USD",
+                "tocurrencycode": "CAD",
+                "averagerate": 1.4641,
+                "endofdayrate": 1.4683,
+                "modifieddate": "2011-05-31 00:00:00"
+            },
+            {
+                "currencyrateid": 5,
+                "currencyratedate": "2011-05-31 00:00:00",
+                "fromcurrencycode": "USD",
+                "tocurrencycode": "CNY",
+                "averagerate": 8.2781,
+                "endofdayrate": 8.2784,
+                "modifieddate": "2011-05-31 00:00:00"
+            },
+            {
+                "currencyrateid": 10,
+                "currencyratedate": "2011-05-31 00:00:00",
+                "fromcurrencycode": "USD",
+                "tocurrencycode": "JPY",
+                "averagerate": 104.91,
+                "endofdayrate": 104.958,
+                "modifieddate": "2011-05-31 00:00:00"
+            },
+            {
+                "currencyrateid": 12,
+                "currencyratedate": "2011-05-31 00:00:00",
+                "fromcurrencycode": "USD",
+                "tocurrencycode": "SAR",
+                "averagerate": 3.7507,
+                "endofdayrate": 3.7584,
+                "modifieddate": "2011-05-31 00:00:00"
+            }
+        ]
+    },
+    {
+        "table_name": "ADVENTUREWORKS.PRODUCT",
+        "table_fullname": "ADVENTUREWORKS.ADVENTUREWORKS.PRODUCT",
+        "column_names": [
+            "safetystocklevel",
+            "productid",
+            "productline",
+            "sellstartdate",
+            "productmodelid",
+            "reorderpoint",
+            "rowguid",
+            "color",
+            "daystomanufacture",
+            "weightunitmeasurecode",
+            "discontinueddate",
+            "standardcost",
+            "makeflag",
+            "sizeunitmeasurecode",
+            "sellenddate",
+            "modifieddate",
+            "finishedgoodsflag",
+            "weight",
+            "productsubcategoryid",
+            "NAME",
+            "listprice",
+            "class",
+            "productnumber",
+            "size",
+            "style"
+        ],
+        "column_types": [
+            "NUMBER",
+            "NUMBER",
+            "TEXT",
+            "TEXT",
+            "TEXT",
+            "NUMBER",
+            "TEXT",
+            "TEXT",
+            "NUMBER",
+            "TEXT",
+            "TEXT",
+            "FLOAT",
+            "TEXT",
+            "TEXT",
+            "TEXT",
+            "TEXT",
+            "TEXT",
+            "TEXT",
+            "TEXT",
+            "TEXT",
+            "FLOAT",
+            "TEXT",
+            "TEXT",
+            "TEXT",
+            "TEXT"
+        ],
+        "description": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "sample_rows": [
+            {
+                "productid": 4,
+                "NAME": "Headset Ball Bearings",
+                "productnumber": "BE-2908",
+                "makeflag": "f",
+                "finishedgoodsflag": "f",
+                "color": "",
+                "safetystocklevel": 800,
+                "reorderpoint": 600,
+                "standardcost": 0.0,
+                "listprice": 0.0,
+                "size": "",
+                "sizeunitmeasurecode": "",
+                "weightunitmeasurecode": "",
+                "weight": "",
+                "daystomanufacture": 0,
+                "productline": "",
+                "class": "",
+                "style": "",
+                "productsubcategoryid": "",
+                "productmodelid": "",
+                "sellstartdate": "2008-04-30 00:00:00",
+                "sellenddate": "",
+                "discontinueddate": "",
+                "rowguid": "ecfed6cb-51ff-49b5-b06c-7d8ac834db8b",
+                "modifieddate": "2014-02-08 10:01:36.827"
+            },
+            {
+                "productid": 317,
+                "NAME": "LL Crankarm",
+                "productnumber": "CA-5965",
+                "makeflag": "f",
+                "finishedgoodsflag": "f",
+                "color": "Black",
+                "safetystocklevel": 500,
+                "reorderpoint": 375,
+                "standardcost": 0.0,
+                "listprice": 0.0,
+                "size": "",
+                "sizeunitmeasurecode": "",
+                "weightunitmeasurecode": "",
+                "weight": "",
+                "daystomanufacture": 0,
+                "productline": "",
+                "class": "L ",
+                "style": "",
+                "productsubcategoryid": "",
+                "productmodelid": "",
+                "sellstartdate": "2008-04-30 00:00:00",
+                "sellenddate": "",
+                "discontinueddate": "",
+                "rowguid": "3c9d10b7-a6b2-4774-9963-c19dcee72fea",
+                "modifieddate": "2014-02-08 10:01:36.827"
+            },
+            {
+                "productid": 318,
+                "NAME": "ML Crankarm",
+                "productnumber": "CA-6738",
+                "makeflag": "f",
+                "finishedgoodsflag": "f",
+                "color": "Black",
+                "safetystocklevel": 500,
+                "reorderpoint": 375,
+                "standardcost": 0.0,
+                "listprice": 0.0,
+                "size": "",
+                "sizeunitmeasurecode": "",
+                "weightunitmeasurecode": "",
+                "weight": "",
+                "daystomanufacture": 0,
+                "productline": "",
+                "class": "M ",
+                "style": "",
+                "productsubcategoryid": "",
+                "productmodelid": "",
+                "sellstartdate": "2008-04-30 00:00:00",
+                "sellenddate": "",
+                "discontinueddate": "",
+                "rowguid": "eabb9a92-fa07-4eab-8955-f0517b4a4ca7",
+                "modifieddate": "2014-02-08 10:01:36.827"
+            },
+            {
+                "productid": 319,
+                "NAME": "HL Crankarm",
+                "productnumber": "CA-7457",
+                "makeflag": "f",
+                "finishedgoodsflag": "f",
+                "color": "Black",
+                "safetystocklevel": 500,
+                "reorderpoint": 375,
+                "standardcost": 0.0,
+                "listprice": 0.0,
+                "size": "",
+                "sizeunitmeasurecode": "",
+                "weightunitmeasurecode": "",
+                "weight": "",
+                "daystomanufacture": 0,
+                "productline": "",
+                "class": "",
+                "style": "",
+                "productsubcategoryid": "",
+                "productmodelid": "",
+                "sellstartdate": "2008-04-30 00:00:00",
+                "sellenddate": "",
+                "discontinueddate": "",
+                "rowguid": "7d3fd384-4f29-484b-86fa-4206e276fe58",
+                "modifieddate": "2014-02-08 10:01:36.827"
+            },
+            {
+                "productid": 320,
+                "NAME": "Chainring Bolts",
+                "productnumber": "CB-2903",
+                "makeflag": "f",
+                "finishedgoodsflag": "f",
+                "color": "Silver",
+                "safetystocklevel": 1000,
+                "reorderpoint": 750,
+                "standardcost": 0.0,
+                "listprice": 0.0,
+                "size": "",
+                "sizeunitmeasurecode": "",
+                "weightunitmeasurecode": "",
+                "weight": "",
+                "daystomanufacture": 0,
+                "productline": "",
+                "class": "",
+                "style": "",
+                "productsubcategoryid": "",
+                "productmodelid": "",
+                "sellstartdate": "2008-04-30 00:00:00",
+                "sellenddate": "",
+                "discontinueddate": "",
+                "rowguid": "7be38e48-b7d6-4486-888e-f53c26735101",
+                "modifieddate": "2014-02-08 10:01:36.827"
+            }
+        ]
+    },
+    {
+        "table_name": "ADVENTUREWORKS.PRODUCTCATEGORY",
+        "table_fullname": "ADVENTUREWORKS.ADVENTUREWORKS.PRODUCTCATEGORY",
+        "column_names": [
+            "productcategoryid",
+            "name",
+            "rowguid",
+            "modifieddate"
+        ],
+        "column_types": [
+            "NUMBER",
+            "TEXT",
+            "TEXT",
+            "TEXT"
+        ],
+        "description": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "sample_rows": [
+            {
+                "productcategoryid": 1,
+                "name": "Bikes",
+                "rowguid": "cfbda25c-df71-47a7-b81b-64ee161aa37c",
+                "modifieddate": "2008-04-30 00:00:00"
+            },
+            {
+                "productcategoryid": 2,
+                "name": "Components",
+                "rowguid": "c657828d-d808-4aba-91a3-af2ce02300e9",
+                "modifieddate": "2008-04-30 00:00:00"
+            },
+            {
+                "productcategoryid": 4,
+                "name": "Accessories",
+                "rowguid": "2be3be36-d9a2-4eee-b593-ed895d97c2a6",
+                "modifieddate": "2008-04-30 00:00:00"
+            }
+        ]
+    },
+    {
+        "table_name": "ADVENTUREWORKS.PRODUCTDESCRIPTION",
+        "table_fullname": "ADVENTUREWORKS.ADVENTUREWORKS.PRODUCTDESCRIPTION",
+        "column_names": [
+            "modifieddate",
+            "productdescriptionid",
+            "rowguid",
+            "description"
+        ],
+        "column_types": [
+            "TEXT",
+            "NUMBER",
+            "TEXT",
+            "TEXT"
+        ],
+        "description": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "sample_rows": [
+            {
+                "productdescriptionid": 3,
+                "description": "Chromoly steel.",
+                "rowguid": "301eed3a-1a82-4855-99cb-2afe8290d641",
+                "modifieddate": "2013-04-30 00:00:00"
+            },
+            {
+                "productdescriptionid": 4,
+                "description": "Aluminum alloy cups; large diameter spindle.",
+                "rowguid": "dfeba528-da11-4650-9d86-cafda7294eb0",
+                "modifieddate": "2013-04-30 00:00:00"
+            },
+            {
+                "productdescriptionid": 5,
+                "description": "Aluminum alloy cups and a hollow axle.",
+                "rowguid": "f7178da7-1a7e-4997-8470-06737181305e",
+                "modifieddate": "2013-04-30 00:00:00"
+            },
+            {
+                "productdescriptionid": 8,
+                "description": "Suitable for any type of riding, on or off-road. Fits any budget. Smooth-shifting with a comfortable ride.",
+                "rowguid": "8e6746e5-ad97-46e2-bd24-fcea075c3b52",
+                "modifieddate": "2013-04-30 00:00:00"
+            },
+            {
+                "productdescriptionid": 64,
+                "description": "This bike delivers a high-level of performance on a budget. It is responsive and maneuverable, and offers peace-of-mind when you decide to go off-road.",
+                "rowguid": "7b1c4e90-85e2-4792-b47b-e0c424e2ec94",
+                "modifieddate": "2013-04-30 00:00:00"
+            }
+        ]
+    },
+    {
+        "table_name": "ADVENTUREWORKS.PRODUCTMODELPRODUCTDESCRIPTIONCULTURE",
+        "table_fullname": "ADVENTUREWORKS.ADVENTUREWORKS.PRODUCTMODELPRODUCTDESCRIPTIONCULTURE",
+        "column_names": [
+            "cultureid",
+            "productmodelid",
+            "productdescriptionid",
+            "modifieddate"
+        ],
+        "column_types": [
+            "TEXT",
+            "NUMBER",
+            "NUMBER",
+            "TEXT"
+        ],
+        "description": [
+            null,
+            null,
+            null,
+            null
+        ],
+        "sample_rows": [
+            {
+                "productmodelid": 1,
+                "productdescriptionid": 1712,
+                "cultureid": "th",
+                "modifieddate": "2013-04-30 00:00:00"
+            },
+            {
+                "productmodelid": 1,
+                "productdescriptionid": 1838,
+                "cultureid": "he",
+                "modifieddate": "2013-04-30 00:00:00"
+            },
+            {
+                "productmodelid": 1,
+                "productdescriptionid": 1965,
+                "cultureid": "zh-cht",
+                "modifieddate": "2013-04-30 00:00:00"
+            },
+            {
+                "productmodelid": 2,
+                "productdescriptionid": 1210,
+                "cultureid": "en",
+                "modifieddate": "2013-04-30 00:00:00"
+            },
+            {
+                "productmodelid": 2,
+                "productdescriptionid": 1721,
+                "cultureid": "th",
+                "modifieddate": "2013-04-30 00:00:00"
+            }
+        ]
+    },
+    {
+        "table_name": "ADVENTUREWORKS.PRODUCTREVIEW",
+        "table_fullname": "ADVENTUREWORKS.ADVENTUREWORKS.PRODUCTREVIEW",
+        "column_names": [
+            "productid",
+            "rating",
+            "emailaddress",
+            "reviewdate",
+            "modifieddate",
+            "reviewername",
+            "productreviewid",
+            "comments",
+            "modifeddate"
+        ],
+        "column_types": [
+            "NUMBER",
+            "NUMBER",
+            "TEXT",
+            "TEXT",
+            "TEXT",
+            "TEXT",
+            "NUMBER",
+            "TEXT",
+            "TEXT"
+        ],
+        "description": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "sample_rows": [
+            {
+                "productreviewid": 2,
+                "productid": 937,
+                "reviewername": "David",
+                "reviewdate": "2013-11-13 00:00:00",
+                "emailaddress": "david@graphicdesigninstitute.com",
+                "rating": 4,
+                "comments": "A little on the heavy side, but overall the entry/exit is easy in all conditions. I've used these pedals for \nmore than 3 years and I've never had a problem. Cleanup is easy. Mud and sand don't get trapped. I would like \nthem even better if there was a weight reduction. Maybe in the next design. Still, I would recommend them to a friend.",
+                "modifeddate": "",
+                "modifieddate": "2013-11-13 00:00:00"
+            }
+        ]
+    },
+    {
+        "table_name": "ADVENTUREWORKS.PRODUCTSUBCATEGORY",
+        "table_fullname": "ADVENTUREWORKS.ADVENTUREWORKS.PRODUCTSUBCATEGORY",
+        "column_names": [
+            "productsubcategoryid",
+            "name",
+            "modifieddate",
+            "rowguid",
+            "productcategoryid"
+        ],
+        "column_types": [
+            "NUMBER",
+            "TEXT",
+            "TEXT",
+            "TEXT",
+            "NUMBER"
+        ],
+        "description": [
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "sample_rows": [
+            {
+                "productsubcategoryid": 1,
+                "productcategoryid": 1,
+                "name": "Mountain Bikes",
+                "rowguid": "2d364ade-264a-433c-b092-4fcbf3804e01",
+                "modifieddate": "2008-04-30 00:00:00"
+            },
+            {
+                "productsubcategoryid": 3,
+                "productcategoryid": 1,
+                "name": "Touring Bikes",
+                "rowguid": "02c5061d-ecdc-4274-b5f1-e91d76bc3f37",
+                "modifieddate": "2008-04-30 00:00:00"
+            },
+            {
+                "productsubcategoryid": 4,
+                "productcategoryid": 2,
+                "name": "Handlebars",
+                "rowguid": "3ef2c725-7135-4c85-9ae6-ae9a3bdd9283",
+                "modifieddate": "2008-04-30 00:00:00"
+            },
+            {
+                "productsubcategoryid": 8,
+                "productcategoryid": 2,
+                "name": "Cranksets",
+                "rowguid": "4f644521-422b-4f19-974a-e3df6102567e",
+                "modifieddate": "2008-04-30 00:00:00"
+            },
+            {
+                "productsubcategoryid": 10,
+                "productcategoryid": 2,
+                "name": "Forks",
+                "rowguid": "b5f9ba42-b69b-4fdd-b2ec-57fb7b42e3cf",
+                "modifieddate": "2008-04-30 00:00:00"
+            }
+        ]
+    },
+    {
+        "table_name": "ADVENTUREWORKS.SALESORDERDETAIL",
+        "table_fullname": "ADVENTUREWORKS.ADVENTUREWORKS.SALESORDERDETAIL",
+        "column_names": [
+            "specialofferid",
+            "orderqty",
+            "salesorderid",
+            "unitpricediscount",
+            "salesorderdetailid",
+            "modifieddate",
+            "productid",
+            "unitprice",
+            "rowguid",
+            "carriertrackingnumber"
+        ],
+        "column_types": [
+            "NUMBER",
+            "NUMBER",
+            "NUMBER",
+            "FLOAT",
+            "NUMBER",
+            "TEXT",
+            "NUMBER",
+            "FLOAT",
+            "TEXT",
+            "TEXT"
+        ],
+        "description": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "sample_rows": [
+            {
+                "salesorderid": 43659,
+                "salesorderdetailid": 3,
+                "carriertrackingnumber": "4911-403C-98",
+                "orderqty": 1,
+                "productid": 778,
+                "specialofferid": 1,
+                "unitprice": 2024.994,
+                "unitpricediscount": 0.0,
+                "rowguid": "475cf8c6-49f6-486e-b0ad-afc6a50cdd2f",
+                "modifieddate": "2011-05-31 00:00:00"
+            },
+            {
+                "salesorderid": 43659,
+                "salesorderdetailid": 4,
+                "carriertrackingnumber": "4911-403C-98",
+                "orderqty": 1,
+                "productid": 771,
+                "specialofferid": 1,
+                "unitprice": 2039.994,
+                "unitpricediscount": 0.0,
+                "rowguid": "04c4de91-5815-45d6-8670-f462719fbce3",
+                "modifieddate": "2011-05-31 00:00:00"
+            },
+            {
+                "salesorderid": 43659,
+                "salesorderdetailid": 7,
+                "carriertrackingnumber": "4911-403C-98",
+                "orderqty": 1,
+                "productid": 774,
+                "specialofferid": 1,
+                "unitprice": 2039.994,
+                "unitpricediscount": 0.0,
+                "rowguid": "80667840-f962-4ee3-96e0-aeca108e0d4f",
+                "modifieddate": "2011-05-31 00:00:00"
+            },
+            {
+                "salesorderid": 43659,
+                "salesorderdetailid": 10,
+                "carriertrackingnumber": "4911-403C-98",
+                "orderqty": 6,
+                "productid": 709,
+                "specialofferid": 1,
+                "unitprice": 5.7,
+                "unitpricediscount": 0.0,
+                "rowguid": "ac769034-3c2f-495c-a5a7-3b71cdb25d4e",
+                "modifieddate": "2011-05-31 00:00:00"
+            },
+            {
+                "salesorderid": 43659,
+                "salesorderdetailid": 11,
+                "carriertrackingnumber": "4911-403C-98",
+                "orderqty": 2,
+                "productid": 712,
+                "specialofferid": 1,
+                "unitprice": 5.1865,
+                "unitpricediscount": 0.0,
+                "rowguid": "06a66921-6b9f-4199-a912-ddafd383472b",
+                "modifieddate": "2011-05-31 00:00:00"
+            }
+        ]
+    },
+    {
+        "table_name": "ADVENTUREWORKS.SALESORDERHEADER",
+        "table_fullname": "ADVENTUREWORKS.ADVENTUREWORKS.SALESORDERHEADER",
+        "column_names": [
+            "rowguid",
+            "STATUS",
+            "comment",
+            "customerid",
+            "currencyrateid",
+            "territoryid",
+            "totaldue",
+            "revisionnumber",
+            "salesorderid",
+            "purchaseordernumber",
+            "onlineorderflag",
+            "freight",
+            "accountnumber",
+            "duedate",
+            "shipmethodid",
+            "orderdate",
+            "creditcardid",
+            "billtoaddressid",
+            "creditcardapprovalcode",
+            "shiptoaddressid",
+            "taxamt",
+            "subtotal",
+            "modifieddate",
+            "shipdate",
+            "salespersonid"
+        ],
+        "column_types": [
+            "TEXT",
+            "TEXT",
+            "TEXT",
+            "NUMBER",
+            "TEXT",
+            "NUMBER",
+            "FLOAT",
+            "NUMBER",
+            "NUMBER",
+            "TEXT",
+            "TEXT",
+            "FLOAT",
+            "TEXT",
+            "TEXT",
+            "NUMBER",
+            "TEXT",
+            "TEXT",
+            "NUMBER",
+            "TEXT",
+            "NUMBER",
+            "FLOAT",
+            "FLOAT",
+            "TEXT",
+            "TEXT",
+            "TEXT"
+        ],
+        "description": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "sample_rows": [
+            {
+                "salesorderid": 43659,
+                "revisionnumber": 8,
+                "orderdate": "2011-05-31 00:00:00",
+                "duedate": "2011-06-12 00:00:00",
+                "shipdate": "2011-06-07 00:00:00",
+                "STATUS": "5",
+                "onlineorderflag": "f",
+                "purchaseordernumber": "PO522145787",
+                "accountnumber": "10-4020-000676",
+                "customerid": 29825,
+                "salespersonid": "279",
+                "territoryid": 5,
+                "billtoaddressid": 985,
+                "shiptoaddressid": 985,
+                "shipmethodid": 5,
+                "creditcardid": "16281",
+                "creditcardapprovalcode": "105041Vi84182",
+                "currencyrateid": "",
+                "subtotal": 20565.6206,
+                "taxamt": 1971.5149,
+                "freight": 616.0984,
+                "totaldue": 23153.2339,
+                "comment": "",
+                "rowguid": "79b65321-39ca-4115-9cba-8fe0903e12e6",
+                "modifieddate": "2011-06-07 00:00:00"
+            },
+            {
+                "salesorderid": 43660,
+                "revisionnumber": 8,
+                "orderdate": "2011-05-31 00:00:00",
+                "duedate": "2011-06-12 00:00:00",
+                "shipdate": "2011-06-07 00:00:00",
+                "STATUS": "5",
+                "onlineorderflag": "f",
+                "purchaseordernumber": "PO18850127500",
+                "accountnumber": "10-4020-000117",
+                "customerid": 29672,
+                "salespersonid": "279",
+                "territoryid": 5,
+                "billtoaddressid": 921,
+                "shiptoaddressid": 921,
+                "shipmethodid": 5,
+                "creditcardid": "5618",
+                "creditcardapprovalcode": "115213Vi29411",
+                "currencyrateid": "",
+                "subtotal": 1294.2529,
+                "taxamt": 124.2483,
+                "freight": 38.8276,
+                "totaldue": 1457.3288,
+                "comment": "",
+                "rowguid": "738dc42d-d03b-48a1-9822-f95a67ea7389",
+                "modifieddate": "2011-06-07 00:00:00"
+            },
+            {
+                "salesorderid": 43662,
+                "revisionnumber": 8,
+                "orderdate": "2011-05-31 00:00:00",
+                "duedate": "2011-06-12 00:00:00",
+                "shipdate": "2011-06-07 00:00:00",
+                "STATUS": "5",
+                "onlineorderflag": "f",
+                "purchaseordernumber": "PO18444174044",
+                "accountnumber": "10-4020-000227",
+                "customerid": 29994,
+                "salespersonid": "282",
+                "territoryid": 6,
+                "billtoaddressid": 482,
+                "shiptoaddressid": 482,
+                "shipmethodid": 5,
+                "creditcardid": "10456",
+                "creditcardapprovalcode": "125295Vi53935",
+                "currencyrateid": "4",
+                "subtotal": 28832.5289,
+                "taxamt": 2775.1646,
+                "freight": 867.2389,
+                "totaldue": 32474.9324,
+                "comment": "",
+                "rowguid": "4a1ecfc0-cc3a-4740-b028-1c50bb48711c",
+                "modifieddate": "2011-06-07 00:00:00"
+            },
+            {
+                "salesorderid": 43664,
+                "revisionnumber": 8,
+                "orderdate": "2011-05-31 00:00:00",
+                "duedate": "2011-06-12 00:00:00",
+                "shipdate": "2011-06-07 00:00:00",
+                "STATUS": "5",
+                "onlineorderflag": "f",
+                "purchaseordernumber": "PO16617121983",
+                "accountnumber": "10-4020-000397",
+                "customerid": 29898,
+                "salespersonid": "280",
+                "territoryid": 1,
+                "billtoaddressid": 876,
+                "shiptoaddressid": 876,
+                "shipmethodid": 5,
+                "creditcardid": "806",
+                "creditcardapprovalcode": "95555Vi4081",
+                "currencyrateid": "",
+                "subtotal": 24432.6088,
+                "taxamt": 2344.9921,
+                "freight": 732.81,
+                "totaldue": 27510.4109,
+                "comment": "",
+                "rowguid": "22a8a5da-8c22-42ad-9241-839489b6ef0d",
+                "modifieddate": "2011-06-07 00:00:00"
+            },
+            {
+                "salesorderid": 43665,
+                "revisionnumber": 8,
+                "orderdate": "2011-05-31 00:00:00",
+                "duedate": "2011-06-12 00:00:00",
+                "shipdate": "2011-06-07 00:00:00",
+                "STATUS": "5",
+                "onlineorderflag": "f",
+                "purchaseordernumber": "PO16588191572",
+                "accountnumber": "10-4020-000146",
+                "customerid": 29580,
+                "salespersonid": "283",
+                "territoryid": 1,
+                "billtoaddressid": 849,
+                "shiptoaddressid": 849,
+                "shipmethodid": 5,
+                "creditcardid": "15232",
+                "creditcardapprovalcode": "35568Vi78804",
+                "currencyrateid": "",
+                "subtotal": 14352.7713,
+                "taxamt": 1375.9427,
+                "freight": 429.9821,
+                "totaldue": 16158.6961,
+                "comment": "",
+                "rowguid": "5602c304-853c-43d7-9e79-76e320d476cf",
+                "modifieddate": "2011-06-07 00:00:00"
+            }
+        ]
+    },
+    {
+        "table_name": "ADVENTUREWORKS.SALESPERSON",
+        "table_fullname": "ADVENTUREWORKS.ADVENTUREWORKS.SALESPERSON",
+        "column_names": [
+            "salesytd",
+            "salesquota",
+            "rowguid",
+            "saleslastyear",
+            "commissionpct",
+            "modifieddate",
+            "bonus",
+            "businessentityid",
+            "territoryid"
+        ],
+        "column_types": [
+            "FLOAT",
+            "TEXT",
+            "TEXT",
+            "FLOAT",
+            "FLOAT",
+            "TEXT",
+            "NUMBER",
+            "NUMBER",
+            "TEXT"
+        ],
+        "description": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "sample_rows": [
+            {
+                "businessentityid": 274,
+                "territoryid": "",
+                "salesquota": "",
+                "bonus": 0,
+                "commissionpct": 0.0,
+                "salesytd": 559697.5639,
+                "saleslastyear": 0.0,
+                "rowguid": "48754992-9ee0-4c0e-8c94-9451604e3e02",
+                "modifieddate": "2010-12-28 00:00:00"
+            },
+            {
+                "businessentityid": 275,
+                "territoryid": "2",
+                "salesquota": "300000",
+                "bonus": 4100,
+                "commissionpct": 0.012,
+                "salesytd": 3763178.1787,
+                "saleslastyear": 1750406.4785,
+                "rowguid": "1e0a7274-3064-4f58-88ee-4c6586c87169",
+                "modifieddate": "2011-05-24 00:00:00"
+            },
+            {
+                "businessentityid": 277,
+                "territoryid": "3",
+                "salesquota": "250000",
+                "bonus": 2500,
+                "commissionpct": 0.015,
+                "salesytd": 3189418.3662,
+                "saleslastyear": 1997186.2037,
+                "rowguid": "39012928-bfec-4242-874d-423162c3f567",
+                "modifieddate": "2011-05-24 00:00:00"
+            },
+            {
+                "businessentityid": 280,
+                "territoryid": "1",
+                "salesquota": "250000",
+                "bonus": 5000,
+                "commissionpct": 0.01,
+                "salesytd": 1352577.1325,
+                "saleslastyear": 1927059.178,
+                "rowguid": "be941a4a-fb50-4947-bda4-bb8972365b08",
+                "modifieddate": "2011-05-24 00:00:00"
+            },
+            {
+                "businessentityid": 281,
+                "territoryid": "4",
+                "salesquota": "250000",
+                "bonus": 3550,
+                "commissionpct": 0.01,
+                "salesytd": 2458535.6169,
+                "saleslastyear": 2073505.9999,
+                "rowguid": "35326ddb-7278-4fef-b3ba-ea137b69094e",
+                "modifieddate": "2011-05-24 00:00:00"
+            }
+        ]
+    },
+    {
+        "table_name": "ADVENTUREWORKS.SALESPERSONQUOTAHISTORY",
+        "table_fullname": "ADVENTUREWORKS.ADVENTUREWORKS.SALESPERSONQUOTAHISTORY",
+        "column_names": [
+            "ModifiedDate",
+            "rowguid",
+            "SalesQuota",
+            "BusinessEntityID",
+            "QuotaDate"
+        ],
+        "column_types": [
+            "TEXT",
+            "TEXT",
+            "FLOAT",
+            "NUMBER",
+            "TEXT"
+        ],
+        "description": [
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "sample_rows": [
+            {
+                "BusinessEntityID": 274,
+                "QuotaDate": "2011-05-31 00:00:00",
+                "SalesQuota": 28000.0,
+                "rowguid": "{99109BBF-8693-4587-BC23-6036EC89E1BE}",
+                "ModifiedDate": "2011-04-16 00:00:00"
+            },
+            {
+                "BusinessEntityID": 274,
+                "QuotaDate": "2011-08-31 00:00:00",
+                "SalesQuota": 7000.0,
+                "rowguid": "{DFD01444-8900-461C-8D6F-04598DAE01D4}",
+                "ModifiedDate": "2011-07-17 00:00:00"
+            },
+            {
+                "BusinessEntityID": 274,
+                "QuotaDate": "2011-12-01 00:00:00",
+                "SalesQuota": 91000.0,
+                "rowguid": "{0A69F453-9689-4CCF-A08C-C644670F5668}",
+                "ModifiedDate": "2011-10-17 00:00:00"
+            },
+            {
+                "BusinessEntityID": 274,
+                "QuotaDate": "2012-02-29 00:00:00",
+                "SalesQuota": 140000.0,
+                "rowguid": "{DA8D1458-5FB9-4C3E-9EAD-8F5CE1393047}",
+                "ModifiedDate": "2012-01-15 00:00:00"
+            },
+            {
+                "BusinessEntityID": 274,
+                "QuotaDate": "2013-08-30 00:00:00",
+                "SalesQuota": 116000.0,
+                "rowguid": "{E9DE95E3-B119-4441-BD1D-B27FC4516022}",
+                "ModifiedDate": "2013-07-16 00:00:00"
+            }
+        ]
+    },
+    {
+        "table_name": "ADVENTUREWORKS.SALESTERRITORY",
+        "table_fullname": "ADVENTUREWORKS.ADVENTUREWORKS.SALESTERRITORY",
+        "column_names": [
+            "territoryid",
+            "salesytd",
+            "modifieddate",
+            "group",
+            "saleslastyear",
+            "countryregioncode",
+            "rowguid",
+            "name",
+            "costytd",
+            "costlastyear"
+        ],
+        "column_types": [
+            "NUMBER",
+            "FLOAT",
+            "TEXT",
+            "TEXT",
+            "FLOAT",
+            "TEXT",
+            "TEXT",
+            "TEXT",
+            "FLOAT",
+            "FLOAT"
+        ],
+        "description": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "sample_rows": [
+            {
+                "territoryid": 6,
+                "name": "Canada",
+                "countryregioncode": "CA",
+                "group": "North America",
+                "salesytd": 6771829.1376,
+                "saleslastyear": 5693988.86,
+                "costytd": 0.0,
+                "costlastyear": 0.0,
+                "rowguid": "06b4af8a-1639-476e-9266-110461d66b00",
+                "modifieddate": "2008-04-30 00:00:00"
+            },
+            {
+                "territoryid": 7,
+                "name": "France",
+                "countryregioncode": "FR",
+                "group": "Europe",
+                "salesytd": 4772398.3078,
+                "saleslastyear": 2396539.7601,
+                "costytd": 0.0,
+                "costlastyear": 0.0,
+                "rowguid": "bf806804-9b4c-4b07-9d19-706f2e689552",
+                "modifieddate": "2008-04-30 00:00:00"
+            },
+            {
+                "territoryid": 10,
+                "name": "United Kingdom",
+                "countryregioncode": "GB",
+                "group": "Europe",
+                "salesytd": 5012905.3656,
+                "saleslastyear": 1635823.3967,
+                "costytd": 0.0,
+                "costlastyear": 0.0,
+                "rowguid": "05fc7e1f-2dea-414e-9ecd-09d150516fb5",
+                "modifieddate": "2008-04-30 00:00:00"
+            }
+        ]
+    }
+]
