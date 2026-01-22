@@ -15,6 +15,7 @@ Text-to-SQL 논문 계보
 
 
 아키텍쳐
+
 <img width="748" height="477" alt="image" src="https://github.com/user-attachments/assets/e3ce1bcf-5fa2-4b22-b294-f8855d33af96" />
 
 
@@ -39,3 +40,4 @@ Text-to-SQL 논문 계보
 <img width="706" height="750" alt="image" src="https://github.com/user-attachments/assets/39162679-99dc-45f1-a8fe-b56581a29919" />
 
 <img width="708" height="727" alt="image" src="https://github.com/user-attachments/assets/a2d8807a-3279-47fd-91c8-7a8d43005b81" />
+
